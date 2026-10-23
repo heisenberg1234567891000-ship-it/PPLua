@@ -1,0 +1,6 @@
+{
+  "name": "PPLua Probe",
+  "author": "PPLua tests",
+  "description": "In-game API smoke test. Not for players: prints PROBE lines to the BepInEx log.",
+  "version": "1.0"
+}

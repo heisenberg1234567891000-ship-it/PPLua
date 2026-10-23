@@ -1,0 +1,22 @@
+name: API or feature request
+description: Something a mod needs to do in the game that the API does not allow yet.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What should your mod be able to do?
+      description: Describe the effect in the game, not only the function you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: api
+    attributes:
+      label: Suggested API
+      description: How you would like to call it from Lua.
+      render: lua
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What you tried
+      description: Any workaround with the current API, and why it falls short.

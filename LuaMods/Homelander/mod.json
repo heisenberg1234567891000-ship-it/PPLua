@@ -1,0 +1,7 @@
+{
+  "name": "Homelander",
+  "author": "PPLua",
+  "description": "Unofficial fan mod (not affiliated with The Boys or Amazon). Flight, heat vision, invulnerability, super strength, speed punch and thunder clap.",
+  "version": "1.0",
+  "main": "main.lua"
+}

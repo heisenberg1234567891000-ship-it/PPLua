@@ -1,0 +1,1 @@
+{ "name": "Bad Loop Mod", "author": "PPLua tests", "description": "Hangs on purpose; PPLua must stop it.", "version": "1.0" }

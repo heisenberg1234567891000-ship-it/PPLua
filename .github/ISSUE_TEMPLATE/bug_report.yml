@@ -1,0 +1,44 @@
+name: Bug report
+description: Something in PPLua or the Lua API does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If a Lua mod can get outside the sandbox (files, network, processes, .NET objects, or past the instruction budget),
+        **do not file it here**. Report it privately as described in SECURITY.md.
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: PPLua (shown in the F8 window title), People Playground, BepInEx.
+      placeholder: PPLua 0.8.0, People Playground 1.27.18, BepInEx 5.4.23.5
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux / Steam Deck (Proton)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal mod that reproduces it
+      description: The smallest mod.json and main.lua that show the problem, if the bug is in the API.
+      render: lua
+  - type: textarea
+    id: log
+    attributes:
+      label: BepInEx/LogOutput.log
+      description: Paste the relevant part, or attach the whole file.
+      render: text

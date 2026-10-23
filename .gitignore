@@ -1,0 +1,15 @@
+# build output
+bin/
+obj/
+dist/
+*.zip
+
+# IDEs
+*.user
+.vs/
+.vscode/
+.idea/
+
+# files players add to a mod for themselves; never part of the repository or a release
+LuaMods/*/custom/
+LuaMods/Homelander/sounds/laser.mp3

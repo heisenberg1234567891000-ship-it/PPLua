@@ -1,0 +1,21 @@
+name: Sandbox tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sandbox:
+    # The plugin itself compiles against the player's own copy of the game, which CI does not have.
+    # The sandbox tests need only MoonSharp and HarmonyX, both from NuGet.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Run sandbox tests
+        run: dotnet run --project tests/SandboxTests -c Release
