@@ -1,5 +1,9 @@
 # PPLua: Lua-моды для People Playground в песочнице
 
+[![Sandbox tests](https://github.com/heisenberg1234567891000-ship-it/PPLua/actions/workflows/tests.yml/badge.svg)](https://github.com/heisenberg1234567891000-ship-it/PPLua/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/heisenberg1234567891000-ship-it/PPLua)](https://github.com/heisenberg1234567891000-ship-it/PPLua/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 [English](README.md) · **Русский**
 
 PPLua — **неофициальный** загрузчик модов, который возвращает в People Playground моды с кодом, но на Lua и в
